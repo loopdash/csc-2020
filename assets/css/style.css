@@ -62,7 +62,7 @@ nav ul {
 }
 @media (min-width: 768px){
     ul.primary-nav {
-        max-width: 900px;
+        max-width: 800px;
     }
 	.primary-nav a {
 		padding-left: 1rem;
