@@ -20,9 +20,15 @@ h2 {
 em, i {
 	font-style: italic;
 }
-strong, b {
+strong, b, a {
 	font-weight: 700;
 	color: #015a84;
+}
+a {
+    text-decoration: underline;
+}
+a:hover {
+    color: #018fc4;
 }
 @media (min-width: 1425px){
 	.bg-pattern-dark, .bg-pattern-light {
@@ -51,6 +57,7 @@ header::before {
 nav a {
 	white-space: nowrap;
 	display: block;
+    font-weight: 400;
 }
 nav ul {
 	padding:0;
@@ -68,12 +75,19 @@ nav ul {
 		padding-left: 1rem;
 		margin-left: 1rem;
 		border-left: 1px solid #fff;
+        font-weight: 400;
+        text-decoration: none;
 	}
 	.secondary-nav a {
 		font-size: .85rem;
 		color: #0f1a26;
 		padding-left: 1.25rem;
+        font-weight: 500;
+        text-decoration: none;
 	}
+    .primary-nav a:hover, .secondary-nav a:hover {
+        text-decoration: underline;
+    }
     nav li {
         display: inline-block;
     }
@@ -138,6 +152,7 @@ nav ul {
 	text-decoration: none;
 	background-color: #ddd;
 	color: #013d59;
+    font-weight: 400;
 }
 .mobile-nav a:hover {
 	background-color: #eee;
@@ -147,6 +162,7 @@ nav ul {
 }
 .main-header nav a {
 	color: #fff;
+    font-weight: 400;
 }
 .inner-container {
 	max-width: 1296px;
@@ -159,8 +175,9 @@ nav ul {
 		padding: 3rem;
 	}
 }
-.text-rev {
+.text-rev, .text-rev a {
 	color: #fff !important;
+    text-decoration:none;
 }
 .text-dark {
 	color: #0f1a26 !important;
