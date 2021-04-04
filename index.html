@@ -12,8 +12,56 @@
 <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="assets/js/scripts.js"></script>
 </head>
-<body><a href="#" class="mobile-toggle d-block d-lg-none" aria-expanded="false"></a>
-	<div id="mobile_nav" class="mobile-nav-container" aria-hidden="true"></div>
+<body>
+<style>
+.se-pre-con {
+    position: fixed;
+    z-index: 1000000000;
+    background-color: rgba(0,90,132,.88);
+    overflow: hidden;
+    max-height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-right: 18px;
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.se-pre-con .image {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+}
+
+.se-pre-con .image img {
+    transition: all .3s;
+}
+    </style>
+<script>
+(function($){
+    $(window).on( 'load', function(e) {
+        $(".se-pre-con .image img").css( {
+            "opacity": "0"
+        } );
+        $(".se-pre-con").fadeOut();
+        $("body").css( {
+            "overflow-y": "visible", "height": "auto"
+        } );
+        
+        console.log( 'loaded.' );
+    });
+})(jQuery);
+</script>
+<dv class="se-pre-con">
+  <div class="image"> <img src="assets/images/loading-overlay.png" alt="loading..."> </div>
+</dv>
+<a href="#" class="mobile-toggle d-block d-lg-none" aria-expanded="false"></a>
+<div id="mobile_nav" class="mobile-nav-container" aria-hidden="true"></div>
 <section id="header" class="bg-pattern-dark bg-position-bottom">
   <header class="main-header">
     <div class="p-4 p-md-5">
@@ -71,20 +119,20 @@
     <div class="row">
       <div class="col-md-3"><img src="assets/images/logo-2c.png" alt="CSC Logo 2-color"/></div>
       <div class="col-md-9 d-flex justify-content-end">
-		  <nav class="secondary-nav-container">
-            <ul class="secondary-nav">
-              <li><a href="#about">About CSC</a></li>
-              <li><a href="#message">Message From Leadership</a></li>
-              <li><a href="#highlights">What Did We Do?</a></li>
-              <li><a href="#learn">What Did We Learn?</a></li>
-              <li><a href="#donors">Thank You!</a></li>
-              <li><a href="#trustees">Board of Trustees</a></li>
-              <li><a href="#visionaries">The Visionaries</a></li>
-              <li><a href="#leadership">CSC Leadership</a></li>
-              <li><a href="#financials">2020 Financials</a></li>
-            </ul>
-			</nav>
-		</div>
+        <nav class="secondary-nav-container">
+          <ul class="secondary-nav">
+            <li><a href="#about">About CSC</a></li>
+            <li><a href="#message">Message From Leadership</a></li>
+            <li><a href="#highlights">What Did We Do?</a></li>
+            <li><a href="#learn">What Did We Learn?</a></li>
+            <li><a href="#donors">Thank You!</a></li>
+            <li><a href="#trustees">Board of Trustees</a></li>
+            <li><a href="#visionaries">The Visionaries</a></li>
+            <li><a href="#leadership">CSC Leadership</a></li>
+            <li><a href="#financials">2020 Financials</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </div>
 </header>
@@ -129,67 +177,74 @@
     <div class="row align-items-center">
       <div class="col-md-2 text-center mb-3"><img src="assets/images/icon-laptop.png" alt="Laptop Icon" /></div>
       <div class="col-md-10 mb-4"><strong>Bright Futures Preschool Went Virtual</strong>
-<p>Instruction to students and parents was provided through interactive online sessions.</p></div>
+        <p>Instruction to students and parents was provided through interactive online sessions.</p>
+      </div>
     </div>
     <div class="row align-items-center">
       <div class="col-md-2 text-center mb-3"><img src="assets/images/icon-family.png" alt="Family Icon" /></div>
       <div class="col-md-10 mb-4"><strong>Early Intervention Staff Got Creative</strong>
-<p>Virtual instruction to children (0-3) and their caregivers was provided and do-it-yourself tactile projects were mailed home.</p></div>
+        <p>Virtual instruction to children (0-3) and their caregivers was provided and do-it-yourself tactile projects were mailed home.</p>
+      </div>
     </div>
     <div class="row align-items-center">
       <div class="col-md-2 text-center mb-3"><img src="assets/images/icon-braille.png" alt="Braille Icon" /></div>
       <div class="col-md-10 mb-4"><strong>Braille Instruction Happened Remotely</strong>
-<p>Braille classes were taught as students followed along with their textbooks over the telephone.</p></div>
+        <p>Braille classes were taught as students followed along with their textbooks over the telephone.</p>
+      </div>
     </div>
     <div class="row align-items-center">
       <div class="col-md-2 text-center mb-3"><img src="assets/images/icon-scientist.png" alt="Pharmacist Icon" /></div>
       <div class="col-md-10 mb-4"><strong>Low Vision Clinic Served Patients in New Ways</strong>
-<p>The clinic conducted tele-health appointments, serving 823 patients.</p></div>
+        <p>The clinic conducted tele-health appointments, serving 823 patients.</p>
+      </div>
     </div>
     <div class="row align-items-center">
       <div class="col-md-2 text-center mb-3"><img src="assets/images/icon-box.png" alt="Shipping Box Icon" /></div>
       <div class="col-md-10 mb-4"><strong>Eyedea Shop Continued to Fill Orders</strong>
-<p>The retail store continued to process and fill orders, shipping essential tools like magnifiers and ‘talking’ devices to 1,487 customers in Ohio and beyond.</p>
-</div>
+        <p>The retail store continued to process and fill orders, shipping essential tools like magnifiers and ‘talking’ devices to 1,487 customers in Ohio and beyond.</p>
+      </div>
     </div>
     <div class="row align-items-center">
       <div class="col-md-2 text-center mb-3"><img src="assets/images/icon-marketing.png" alt="Social Media Icon" /></div>
       <div class="col-md-10 mb-4"><strong>Communication Platforms Provided Resources and Information</strong>
-<p>Cleveland Sight Center’s Radio Reading Network (CSCN), social media channels and website featured COVID-19 community resources for the blind and visually impaired community.</p>
-</div>
+        <p>Cleveland Sight Center’s Radio Reading Network (CSCN), social media channels and website featured COVID-19 community resources for the blind and visually impaired community.</p>
+      </div>
     </div>
     <div class="row align-items-center">
       <div class="col-md-2 text-center mb-3"><img src="assets/images/icon-meditate.png" alt="Meditation Icon"/></div>
       <div class="col-md-10 mb-4"><strong>Virtual Recreation Programs Were Offered</strong>
-<p>The Recreation team created engaging and interactive activities like meditation, yoga and wellness programs online. View an online program</p></div>
+        <p>The Recreation team created engaging and interactive activities like meditation, yoga and wellness programs online. View an online program</p>
+      </div>
     </div>
     <div class="row align-items-center">
       <div class="col-md-2 text-center mb-3"><img src="assets/images/icon-chat.png" alt="Chat Icon" /></div>
       <div class="col-md-10 mb-4"><strong>Staff Conducted Client Wellness Check-Ins</strong>
-<p>Staff members made phone calls to more than 4,000 clients to check-in on their well-being.</p>
-</div>
+        <p>Staff members made phone calls to more than 4,000 clients to check-in on their well-being.</p>
+      </div>
     </div>
     <div class="row align-items-center">
       <div class="col-md-2 text-center mb-3"><img src="assets/images/icon-phone.png" alt="Phone Icon"/></div>
       <div class="col-md-10 mb-4"><strong>Call Center Maintained High Quality Work</strong>
-<p>580,729 calls and emails were handled by the Call Center in 2020 with quality scores at 97% and caller satisfaction scores at 96%. Learn more about the Call Center</p></div>
+        <p>580,729 calls and emails were handled by the Call Center in 2020 with quality scores at 97% and caller satisfaction scores at 96%. Learn more about the Call Center</p>
+      </div>
     </div>
     <div class="row align-items-center">
       <div class="col-md-2 text-center mb-3"><img src="assets/images/icon-calendar.png" alt="Calendar Icon" /></div>
       <div class="col-md-10 mb-4"><strong>Fundraising Events Pivoted</strong>
-<p>White Cane Walk and Spellbound pivoted to a virtual format, engaging participants in new and creative ways while raising necessary financial support for the agency.</p></div>
+        <p>White Cane Walk and Spellbound pivoted to a virtual format, engaging participants in new and creative ways while raising necessary financial support for the agency.</p>
+      </div>
     </div>
     <div class="row align-items-center">
       <div class="col-md-2 text-center mb-3"><img src="assets/images/icon-screen.png" alt="Projection Screen Icon" /></div>
-      <div class="col-md-10 mb-4"><strong>Community Outreach Continued</strong> 
-<p>The Outreach team delivered 120 presentations about visual impairments – reaching medical professionals, caregivers and potential clients.</p>
-</div>
+      <div class="col-md-10 mb-4"><strong>Community Outreach Continued</strong>
+        <p>The Outreach team delivered 120 presentations about visual impairments – reaching medical professionals, caregivers and potential clients.</p>
+      </div>
     </div>
     <div class="row align-items-center">
       <div class="col-md-2 text-center mb-3"><img src="assets/images/icon-services.png" alt="Presenter Icon" /></div>
       <div class="col-md-10 mb-4"><strong>Employment Services Expanded Reach</strong>
-<p>Job development and training services quickly pivoted to a virtual format which expanded services to include Akron and Youngstown. </p>
-</div>
+        <p>Job development and training services quickly pivoted to a virtual format which expanded services to include Akron and Youngstown. </p>
+      </div>
     </div>
   </div>
 </section>
@@ -571,6 +626,7 @@
       </div>
     </div>
   </div>
-</footer><div class="breakflag"></div>
+</footer>
+<div class="breakflag"></div>
 </body>
 </html>
