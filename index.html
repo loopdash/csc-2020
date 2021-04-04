@@ -2,54 +2,59 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>2020 Impact Report | Cleveland Sight Center</title>
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/csc/style.css" type="text/css">
 <link rel="stylesheet" href="assets/css/reset.css" type="text/css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
-<script src="assets/js/scripts.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="assets/js/scripts.js"></script>
 </head>
-<!--
-navy: 013d59
-reflex: 015a84 - shadow 40%
-text-dark: 0f1a26
-carolina: 61a3ca - shadow 30%
-cobalt: 018fc4 - shadow 50%
-green: 529f42 - shadow 33%
--->
-<body>
-<section id="section1" class="bg-pattern-dark bg-position-bottom">
+<body><a href="#" class="mobile-toggle d-block d-lg-none"></a>
+	<div id="mobile_nav" class="mobile-nav-container"></div>
+<section id="header" class="bg-pattern-dark bg-position-bottom">
   <header class="main-header">
-    <div class="p-5">
+    <div class="p-4 p-md-5">
       <div class="row">
-        <div class="col-3"><img src="assets/images/logo-rev.png" alt="CSC Logo 2-color"/></div>
-        <div class="col-9 d-flex justify-content-end">
+        <div class="col-md-3"><img src="assets/images/logo-rev.png" alt="CSC Logo 2-color"/></div>
+        <div class="d-none d-lg-flex col-md-9 justify-content-end">
           <div class="pr-3">Quick Links:</div>
-          <nav class="text-right">About CSC   |   Message From Leadership   |    What Did We Learn?   |   Thank You!<br/>
-            Board of Trustees   |   The Visionaries   |   CSC Leadership     |     Financial Update</nav>
+          <nav class="text-md-right primary-nav-container">
+            <ul class="primary-nav">
+              <li><a href="#about">About CSC</a></li>
+              <li><a href="#message">Message From Leadership</a></li>
+              <li><a href="#highlights">What Did We Do?</a></li>
+              <li><a href="#learn">What Did We Learn?</a></li>
+              <li><a href="#donors">Thank You!</a></li>
+              <li><a href="#trustees">Board of Trustees</a></li>
+              <li><a href="#visionaries">The Visionaries</a></li>
+              <li><a href="#leadership">CSC Leadership</a></li>
+              <li><a href="#financials">Financial Update</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
     </div>
   </header>
-  <div class="inner-container">
-    <div class="row">
-      <div class="col-md-6 d-flex align-items-center">
+  <div class="inner-container spacer-wide-bottom">
+    <div class="row align-items-center">
+      <div class="col-md-6">
         <h1 class="text-rev">2020 Impact Report:<br/>
           See What’s Possible </h1>
+        <button class="pill-rev arrow-right text-larger">explore</button>
       </div>
-      <div class="col-md-6 d-flex align-items-center justify-content-center"> <img src="assets/images/hero.png" alt="CSC Hero Image"></div>
+      <div class="col-md-6 d-none d-md-block"> <img src="assets/images/hero.png" alt="CSC Hero Image"></div>
     </div>
   </div>
 </section>
-<section id="section2">
+<section id="about">
   <div class="inner-container">
     <h2>About Cleveland Sight Center (CSC)</h2>
     <div class="row">
       <div class="col-md-6 text-center">
-        <div class="mr-md-5"><img src="assets/images/hero2.png" alt="Woman walking"/><br/>
+        <div class="mr-md-5 mb-4"><img src="assets/images/hero2.png" alt="Woman walking"/><br/>
           <img src="assets/images/logos.png" alt="Logos" /> </div>
       </div>
       <div class="col-md-6">
@@ -61,30 +66,42 @@ green: 529f42 - shadow 33%
     </div>
   </div>
 </section>
-<header class="sticky-header bg-white">
-  <div class="p-5">
+<header class="d-none d-lg-block sticky-header bg-white">
+  <div class="p-4 p-md-5">
     <div class="row">
-      <div class="col-3"><img src="assets/images/logo-2c.png" alt="CSC Logo 2-color"/></div>
-      <div class="col-9 d-flex justify-content-end">
-        <nav>About CSC   |   Message From Leadership   |    What Did We Learn?   |   Thank You!   |   Board of Trustees   |   The Visionaries   |   CSC Leadership     |     Financial Update</nav>
-      </div>
+      <div class="col-md-3"><img src="assets/images/logo-2c.png" alt="CSC Logo 2-color"/></div>
+      <div class="col-md-9 d-flex justify-content-end">
+		  <nav>
+            <ul class="secondary-nav">
+              <li><a href="#about">About CSC</a></li>
+              <li><a href="#message">Message From Leadership</a></li>
+              <li><a href="#highlights">What Did We Do?</a></li>
+              <li><a href="#learn">What Did We Learn?</a></li>
+              <li><a href="#donors">Thank You!</a></li>
+              <li><a href="#trustees">Board of Trustees</a></li>
+              <li><a href="#visionaries">The Visionaries</a></li>
+              <li><a href="#leadership">CSC Leadership</a></li>
+              <li><a href="#financials">Financial Update</a></li>
+            </ul>
+			</nav>
+		</div>
     </div>
   </div>
 </header>
-<section id="section3" class="bg-pattern-light bg-position-bottom">
+<section id="message" class="bg-pattern-light bg-position-bottom">
   <div class="inner-container">
     <h2>A Message From CSC Leadership</h2>
     <div class="row">
       <div class="col-md-5">
         <div class="mr-md-5">
-          <div class="spacer-wide-bottom"><img src="assets/images/headshots.png" alt="Leadership headshots" /></div>
+          <div class="spacer-bottom"><img src="assets/images/headshots.png" alt="Leadership headshots" /></div>
           <div class="p-3">
             <p class="leading-quote">The isolation we are all experiencing [during COVID-19] is a scary and lonely feeling – unable to see our loved ones, unsure of our surroundings and trying to figure out our new normal. However, for people living with blindness and low vision, like me, this is our daily life.”</p>
             <p><em>- Alicia Howerton, Cleveland Sight Center staff member and client</em></p>
           </div>
         </div>
       </div>
-      <div class="col-md-7 spacer-wide-bottom">
+      <div class="col-md-7 spacer-bottom">
         <p>In moments of darkness, it is often a <strong>beacon of hope</strong> that allows us to see what is possible on the other end. Throughout 2020, we all lived with uncertainty, fear and isolation due to COVID-19. However, we found hope in new ways. We adapted.</p>
         <p>We, at Cleveland Sight Center, did the same. As we pivoted and found alternative ways to serve our clients, we couldn’t help but be reminded that adapting to something caused by an external force is what our clients are faced with daily.</p>
         <p>Despite the fear and many unknowns that come with being blind or visually impaired, <strong>they choose to be brave every day.</strong></p>
@@ -98,128 +115,202 @@ green: 529f42 - shadow 33%
     </div>
   </div>
 </section>
-<section id="section4">
+<section id="highlights">
   <div class="inner-container">
     <div class="row align-items-center">
-      <div class="col-md-6">
+      <div class="col-md-6 mb-4">
         <h2 class="bar-bottom mb-0">What Did We Do?</h2>
       </div>
-      <div class="col-md-6 text-right"><img src="assets/images/hero3.png" /></div>
+      <div class="col-md-6 text-right mb-4"><img src="assets/images/hero3.png" /></div>
     </div>
     <p>In mid-March of 2020, Cleveland Sight Center’s main building closed due to the uncertainties of COVID-19. Similar to many other businesses, we had to quickly pivot our traditional in-person services to a remote service model. For CSC, there was one drastic difference – our clients are blind or visually impaired and rely on their sense of touch during trainings with staff – which limited the amount of remote services we could perform.</p>
     <p>In May, staff recognized that our clients still needed vital in-person services that couldn’t be offered remotely. So, staff followed all safety guidelines, put on their PPE and delivered in-person services – providing essential relief to isolated clients in need throughout the year.</p>
     <p>Together, our clients and staff adapted, overcame obstacles and allowed us to see what is possible by serving 5,522 people through direct services and outreach in innovative ways:</p>
-    <div class="d-flex align-items-center">
-      <div class="icon-container"><img src="assets/images/icon-laptop.png" /></div>
-      <div>Bright Futures Preschool continued instruction to students and parents through interactive online group sessions.</div>
+    <div class="row align-items-center">
+      <div class="col-md-2 text-center mb-3"><img src="assets/images/icon-laptop.png" /></div>
+      <div class="col-md-10 mb-4">Bright Futures Preschool continued instruction to students and parents through interactive online group sessions.</div>
     </div>
-    <div class="d-flex align-items-center">
-      <div class="icon-container"><img src="assets/images/icon-laptop.png" /></div>
-      <div>Services were provided to 217 clients and families across 15 counties in Northeast Ohio. </div>
+    <div class="row align-items-center">
+      <div class="col-md-2 text-center mb-3"><img src="assets/images/icon-laptop.png" /></div>
+      <div class="col-md-10 mb-4">Services were provided to 217 clients and families across 15 counties in Northeast Ohio. </div>
     </div>
-    <div class="d-flex align-items-center">
-      <div class="icon-container"><img src="assets/images/icon-laptop.png" /></div>
-      <div>Virtual instruction to Early Intervention children (0-3) and their caregivers was provided and do-it-yourself tactile projects were mailed home to families.</div>
+    <div class="row align-items-center">
+      <div class="col-md-2 text-center mb-3"><img src="assets/images/icon-laptop.png" /></div>
+      <div class="col-md-10 mb-4">Virtual instruction to Early Intervention children (0-3) and their caregivers was provided and do-it-yourself tactile projects were mailed home to families.</div>
     </div>
-    <div class="d-flex align-items-center">
-      <div class="icon-container"><img src="assets/images/icon-laptop.png" /></div>
-      <div>Braille instruction classes were taught with students following along with their textbooks over the telephone.</div>
+    <div class="row align-items-center">
+      <div class="col-md-2 text-center mb-3"><img src="assets/images/icon-laptop.png" /></div>
+      <div class="col-md-10 mb-4">Braille instruction classes were taught with students following along with their textbooks over the telephone.</div>
     </div>
-    <div class="d-flex align-items-center">
-      <div class="icon-container"><img src="assets/images/icon-laptop.png" /></div>
-      <div>The Low Vision Clinic conducted tele-health appointments to serve patients.</div>
+    <div class="row align-items-center">
+      <div class="col-md-2 text-center mb-3"><img src="assets/images/icon-laptop.png" /></div>
+      <div class="col-md-10 mb-4">The Low Vision Clinic conducted tele-health appointments to serve patients.</div>
     </div>
-    <div class="d-flex align-items-center">
-      <div class="icon-container"><img src="assets/images/icon-laptop.png" /></div>
-      <div>823 patients were seen by the Low Vision Clinic to maximize remaing vision</div>
+    <div class="row align-items-center">
+      <div class="col-md-2 text-center mb-3"><img src="assets/images/icon-laptop.png" /></div>
+      <div class="col-md-10 mb-4">823 patients were seen by the Low Vision Clinic to maximize remaing vision</div>
     </div>
-    <div class="d-flex align-items-center">
-      <div class="icon-container"><img src="assets/images/icon-laptop.png" /></div>
-      <div>The Eyedea Shop retail store continued to process and fill orders, shipping essential tools like magnifiers and ‘talking’ devices to 1,487 customers in Ohio and beyond.</div>
+    <div class="row align-items-center">
+      <div class="col-md-2 text-center mb-3"><img src="assets/images/icon-laptop.png" /></div>
+      <div class="col-md-10 mb-4">The Eyedea Shop retail store continued to process and fill orders, shipping essential tools like magnifiers and ‘talking’ devices to 1,487 customers in Ohio and beyond.</div>
     </div>
-    <div class="d-flex align-items-center">
-      <div class="icon-container"><img src="assets/images/icon-laptop.png" /></div>
-      <div>Cleveland Sight Center’s Radio Reading Network (CSCN), social media channels and website featured up-to-date community resources and CSC information regarding COVID-19.   Learn more</div>
+    <div class="row align-items-center">
+      <div class="col-md-2 text-center mb-3"><img src="assets/images/icon-laptop.png" /></div>
+      <div class="col-md-10 mb-4">Cleveland Sight Center’s Radio Reading Network (CSCN), social media channels and website featured up-to-date community resources and CSC information regarding COVID-19.   Learn more</div>
     </div>
-    <div class="d-flex align-items-center">
-      <div class="icon-container"><img src="assets/images/icon-laptop.png" /></div>
-      <div>The Recreation team created engaging and interactive activities like meditation, yoga and wellness programs that were conducted online.</div>
+    <div class="row align-items-center">
+      <div class="col-md-2 text-center mb-3"><img src="assets/images/icon-laptop.png" /></div>
+      <div class="col-md-10 mb-4">The Recreation team created engaging and interactive activities like meditation, yoga and wellness programs that were conducted online.</div>
     </div>
-    <div class="d-flex align-items-center">
-      <div class="icon-container"><img src="assets/images/icon-laptop.png" /></div>
-      <div>Staff members made phone calls to more than 4,000 clients to check in on their well-being.</div>
+    <div class="row align-items-center">
+      <div class="col-md-2 text-center mb-3"><img src="assets/images/icon-laptop.png" /></div>
+      <div class="col-md-10 mb-4">Staff members made phone calls to more than 4,000 clients to check in on their well-being.</div>
     </div>
-    <div class="d-flex align-items-center">
-      <div class="icon-container"><img src="assets/images/icon-laptop.png" /></div>
-      <div>580,729 calls and emails were handled by the Call Center in 2020 with quality scores at 97% and caller satisfaction scores at 96%.</div>
+    <div class="row align-items-center">
+      <div class="col-md-2 text-center mb-3"><img src="assets/images/icon-laptop.png" /></div>
+      <div class="col-md-10 mb-4">580,729 calls and emails were handled by the Call Center in 2020 with quality scores at 97% and caller satisfaction scores at 96%.</div>
     </div>
-    <div class="d-flex align-items-center">
-      <div class="icon-container"><img src="assets/images/icon-laptop.png" /></div>
-      <div>The Call Center is a social enterprise that employs people who have a work-limiting disability. </div>
+    <div class="row align-items-center">
+      <div class="col-md-2 text-center mb-3"><img src="assets/images/icon-laptop.png" /></div>
+      <div class="col-md-10 mb-4">The Call Center is a social enterprise that employs people who have a work-limiting disability. </div>
     </div>
-    <div class="d-flex align-items-center">
-      <div class="icon-container"><img src="assets/images/icon-laptop.png" /></div>
-      <div>Annual fundraising events including White Cane Walk and the Spellbound Gala pivoted to a virtual format, engaging participants in new and creative ways while raising necessary financial support for the agency.</div>
+    <div class="row align-items-center">
+      <div class="col-md-2 text-center mb-3"><img src="assets/images/icon-laptop.png" /></div>
+      <div class="col-md-10 mb-4">Annual fundraising events including White Cane Walk and the Spellbound Gala pivoted to a virtual format, engaging participants in new and creative ways while raising necessary financial support for the agency.</div>
     </div>
-    <div class="d-flex align-items-center">
-      <div class="icon-container"><img src="assets/images/icon-laptop.png" /></div>
-      <div>The Outreach team continued to deliver educational information about visual impairments through 120 presentations – reaching medical professionals, caregivers and potential clients. </div>
+    <div class="row align-items-center">
+      <div class="col-md-2 text-center mb-3"><img src="assets/images/icon-laptop.png" /></div>
+      <div class="col-md-10 mb-4">The Outreach team continued to deliver educational information about visual impairments through 120 presentations – reaching medical professionals, caregivers and potential clients. </div>
     </div>
-    <div class="d-flex align-items-center">
-      <div class="icon-container"><img src="assets/images/icon-laptop.png" /></div>
-      <div>Employment Services continued to provide job development and training services by quickly pivoting to a virtual format which resulted in being able to expand services to include Akron and Youngstown. </div>
+    <div class="row align-items-center">
+      <div class="col-md-2 text-center mb-3"><img src="assets/images/icon-laptop.png" /></div>
+      <div class="col-md-10 mb-4">Employment Services continued to provide job development and training services by quickly pivoting to a virtual format which resulted in being able to expand services to include Akron and Youngstown. </div>
     </div>
   </div>
 </section>
-<section id="section5" class="bg-pattern-light bg-position-top">
+<section id="learn" class="bg-pattern-light bg-position-top">
   <div class="inner-container">
     <div class="row align-items-center mb-4">
-      <div class="col-md-6 text-left"><img src="assets/images/hero4.png" /></div>
+      <div class="col-md-6 text-left mb-4"><img src="assets/images/hero4.png" /></div>
       <div class="col-md-6">
         <h2 class="bar-bottom-darker mb-0">What Did We Learn?</h2>
       </div>
     </div>
-    <h4>Transportation is not a barrier</h4>
     <div class="row mb-4">
       <div class="col-md-8">
+        <h4 class="underline">Transportation is not a barrier</h4>
         <p class="text-larger">People who are blind or visually impaired are often unable to drive and have difficulties accessing public transportation. We learned that transportation does not have to be a barrier to access many of our services. Now, services are successfully provided remotely and engagement is no longer limited because of those unable to visit the building.</p>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 pt-5">
         <p class="leading-quote">“I am so happy that you are hosting virtual dance and yoga. I typically am unable to leave my apartment because of my health concerns. I love to dance, and now I get to do it from my living room with all of my CSC friends!”</p>
         <p><em>&nbsp;– CSC Client</em></p>
       </div>
     </div>
-    <h4>We are a lifeline for our clients</h4>
     <div class="row mb-4">
       <div class="col-md-8">
+        <h4 class="underline">We are a lifeline for our clients</h4>
         <p class="text-larger">We are a lifeline for many clients. During a very isolating time, Cleveland Sight Center staff were there for clients when needed most, which was essential to their wellness. Simply offering virtual recreation programs made a huge difference in their lives. </p>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 pt-5">
         <p class="leading-quote">“If we didn’t have [these virtual recreation programs], I don’t know what we’d do.”</p>
         <p><em>&nbsp;– CSC Client</em></p>
       </div>
     </div>
-    <h4>We can foster independence in new ways</h4>
     <div class="row mb-4">
       <div class="col-md-8">
+        <h4 class="underline">We can foster independence in new ways</h4>
         <p class="text-larger">Instructing over the phone instead of side-by-side meant clients needed to be more independent. Clients had to learn how to use equipment and read braille without an instructor physically being by their side. By providing instructions over the phone, clients and their families had to do more for themselves, fostering increased independence. </p>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 pt-5">
         <p class="leading-quote">“Remote training can be even more empowering to our clients because they have to demonstrate they can do a task [compared to] in-person training when we help them step-by-step. Now they have to listen and perform.”</p>
         <p><em>&nbsp;– CSC Rehabilitation Staff Member</em></p>
       </div>
     </div>
-    <h4>We can foster independence in new ways</h4>
+    <h4 class="underline">We can foster independence in new ways</h4>
     <div class="mb-5">
-        <p class="text-larger">Advocacy for the blind and visually impaired community is needed now more than ever. In a world designed for people who are sighted, many safety protocols regarding COVID-19 were put in place without full accessibility to people who live with disabilities. For example, arrows on the floor of stores indicating the flow of traffic are not accessible for people without sight. Advocacy, education and outreach efforts to create a more inclusive world for people of all abilities will continue to be a priority for Cleveland Sight Center.</p>
-      </div>
-      <div class="p-5 border text-larger"><p><strong>The future will only be more fruitful because of the lessons learned, and we continue to learn, during the COVID-19 pandemic. We all continue to see “what is possible” because of the resilience of clients, staff, donors and volunteers.</strong></p></div>
+      <p class="text-larger">Advocacy for the blind and visually impaired community is needed now more than ever. In a world designed for people who are sighted, many safety protocols regarding COVID-19 were put in place without full accessibility to people who live with disabilities. For example, arrows on the floor of stores indicating the flow of traffic are not accessible for people without sight. Advocacy, education and outreach efforts to create a more inclusive world for people of all abilities will continue to be a priority for Cleveland Sight Center.</p>
+    </div>
+    <div class="p-5 border text-larger">
+      <p><strong>The future will only be more fruitful because of the lessons learned, and we continue to learn, during the COVID-19 pandemic. We all continue to see “what is possible” because of the resilience of clients, staff, donors and volunteers.</strong></p>
+    </div>
   </div>
 </section>
-<section id="section6">
+<section id="trustees">
   <div class="inner-container">
     <div class="row align-items-center mb-4">
-      <div class="col-md-7">
+      <div class="col-md-7 mb-4">
+        <h2 class="bar-bottom mb-0">Board of Trustees</h2>
+      </div>
+      <div class="col-md-5 text-right"><img src="assets/images/hero5.png" /></div>
+    </div>
+    <h4 class="underline mb-4">Officers and Executive Committee</h4>
+    <div class="columns-lg-3 columns-md-2 mb-4">
+      <p><strong>Howard A. Lichtig,</strong><br/>
+        Chair</p>
+      <p><strong>Bonita G. Teeuwen,</strong><br/>
+        First Vice Chair</p>
+      <p><strong>Joan U. Allgood,</strong><br/>
+        Secretary</p>
+      <p><strong>Wally Anders,</strong><br/>
+        Treasurer</p>
+      <p><strong>Sheryl King Benford,</strong><br/>
+        Immediate Past Chair</p>
+      <p><strong>Nathan Kelly,</strong><br/>
+        Vice Chair</p>
+      <p><strong>Erin C. Ploucha,</strong><br/>
+        Vice Chair</p>
+      <p><strong>Cheryl E. Fields,</strong><br/>
+        Chair, Consumer Council</p>
+      <p><strong>Jill Marcotte,</strong><br/>
+        Chair, Strategic Planning</p>
+      <p><strong>Dr. Jennell C. Vick,</strong><br/>
+        Chair, Client Services</p>
+    </div>
+    <h4 class="underline mb-4">Trustees</h4>
+    <div class="columns-lg-3 columns-md-2 mb-4">
+      <p><strong>Rebecca Alexander, LCSW-R, MPH, PLLC</strong></p>
+      <p><strong>Karen Peterson Assink</strong></p>
+      <p><strong>Mary H. Bookman</strong></p>
+      <p><strong>Karen A. Bradley, MD</strong></p>
+      <p><strong>Brent M. Buckley</strong></p>
+      <p><strong>Erin N. Chelune</strong></p>
+      <p><strong>Robert L. Englander</strong></p>
+      <p><strong>Thomas P. Furnas</strong></p>
+      <p><strong>Michael H. Greenberg, OD</strong></p>
+      <p><strong>Robert L. Hartford, III</strong></p>
+      <p><strong>Lynn V. Heiligenthal-Showalter</strong></p>
+      <p><strong>Suber S. Huang, MD</strong></p>
+      <p><strong>Peter A. Igel</strong></p>
+      <p><strong>Frederick Kuper Jones</strong></p>
+      <p><strong>Kenny Koblitz</strong></p>
+      <p><strong>Kevin McKinnis</strong></p>
+      <p><strong>Beejadi N. Mukunda, MD</strong></p>
+      <p><strong>Thomas C. Norton</strong></p>
+      <p><strong>Caroline G. Oberndorf</strong></p>
+      <p><strong>Edward Oberndorf</strong></p>
+      <p><strong>John P. O’Brien</strong></p>
+      <p><strong>Thomas P. O’Malley</strong></p>
+      <p><strong>Sara W. Parish</strong></p>
+      <p><strong>Douglas A. Piper</strong></p>
+      <p><strong>Dr. Ronald E. Posner</strong></p>
+      <p><strong>Beverly J. Roach</strong></p>
+      <p><strong>James P. Sacher</strong></p>
+      <p><strong>Andrew L. Sikorovsky</strong></p>
+      <p><strong>Beth W. Smith</strong></p>
+      <p><strong>Linda Smythe</strong></p>
+      <p><strong>William L. Spring, Esq.</strong></p>
+      <p><strong>G. Maxwell Toole</strong></p>
+      <p><strong>Marilyn Tsivitse</strong></p>
+      <p><strong>Myron Weissman</strong></p>
+      <p><strong>Stanley E. Wertheim</strong></p>
+      <p><strong>Steven Willensky</strong></p>
+    </div>
+  </div>
+</section>
+<section id="donors">
+  <div class="inner-container">
+    <div class="row align-items-center mb-4">
+      <div class="col-md-7 mb-4">
         <h2 class="bar-bottom mb-0">Thank You Donors and Volunteers!</h2>
       </div>
       <div class="col-md-5 text-right"><img src="assets/images/hero5.png" /></div>
@@ -227,9 +318,9 @@ green: 529f42 - shadow 33%
     <div class="row mb-4">
       <div class="col-md-8 text-larger">
         <p>Thank you for believing that the blind and visually impaired community can achieve anything a sighted person can. Your support allowed us to continue to be a beacon of hope.</p>
-        <div class="d-flex">
-          <div class="icon-container"><img src="assets/images/icon-caring.png" /></div>
-          <div>Because of you, $2,410,337 was donated and 5,200 volunteer hours were completed in support of our clients. This support enabled CSC staff to focus on helping clients thrive during this difficult time. </div>
+        <div class="row mb-4">
+          <div class="col-md-2 mb-4 text-center"><img src="assets/images/icon-caring.png" /></div>
+          <div class="col-md-10">Because of you, $2,410,337 was donated and 5,200 volunteer hours were completed in support of our clients. This support enabled CSC staff to focus on helping clients thrive during this difficult time. </div>
         </div>
       </div>
       <div class="col-md-4">
@@ -238,22 +329,22 @@ green: 529f42 - shadow 33%
       </div>
     </div>
     <h4 class="mb-4">Donor Groups:</h4>
-    <div class="row mb-4">
-      <div class="col-md-4">
+    <div class="row">
+      <div class="col-md-4 mb-4">
         <div class="border p-4 h-100">
-          <h5>The Foresight Society</h5>
+          <h5 class="arrow-right">The Foresight Society</h5>
           <p>Established to honor all individuals who have made the ultimate commitment of an endowment gift, established a life income plan or made provisions in their estate plans to benefit Cleveland Sight Center.</p>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 mb-4">
         <div class="border p-4 h-100">
-          <h5>The Champions’ Society</h5>
+          <h5 class="arrow-right">The Champions’ Society</h5>
           <p>Members have given gifts totaling $5,000 or more in 2020.</p>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 mb-4">
         <div class="border p-4 h-100">
-          <h5>The Leaders’ Society</h5>
+          <h5 class="arrow-right">The Leaders’ Society</h5>
           <p>Members have given $2,500 to $4,999 in 2020.</p>
         </div>
       </div>
@@ -265,7 +356,7 @@ green: 529f42 - shadow 33%
     </div>
   </div>
 </section>
-<section id="section7">
+<section id="visionaries">
   <div class="inner-container">
     <h2 class="bar-bottom">The Visionaries</h2>
     <p class="text-larger mb-4">The Visionaries is a Young Professionals group of dedicated young professionals that work to support CSC’s mission while raising awareness and funds through events that involve the community. Members develop leadership and networking skills that will prepare them to be the next generation of board leadership at Cleveland Sight Center.</p>
@@ -285,7 +376,7 @@ green: 529f42 - shadow 33%
       <p><strong>Allison Prelosky-Leeson</strong></p>
       <p><strong>Evan Leeson</strong></p>
     </div>
-    <h2 class="bar-bottom pt-5">Cleveland Sight Center Leadership</h2>
+    <h2 class="bar-bottom pt-5" id="leadership">Cleveland Sight Center Leadership</h2>
     <div class="columns-md-2">
       <p><strong>Larry Benders,</strong><br/>
         President and Chief Executive Officer</p>
@@ -310,10 +401,10 @@ green: 529f42 - shadow 33%
     </div>
   </div>
 </section>
-<section id="section8" class="bg-pattern-light bg-position-top">
+<section id="financials" class="bg-pattern-light bg-position-top">
   <div class="inner-container">
     <h2>2020 Financials</h2>
-    <div class="row spacer-wide-bottom">
+    <div class="row spacer-bottom">
       <div class="col-md-6">
         <h3>Balance Sheet</h3>
         <table class="financials">
@@ -438,47 +529,43 @@ green: 529f42 - shadow 33%
         </table>
       </div>
     </div>
-	  <div class="row mb-5"><div class="col-md-4 text-center">
-		  <img src="assets/images/chart-revenue.png" alt="Chart - 2020 Revenue"/>
-		  </div><div class="col-md-8">
-	<h3>Revenue</h3>
-      <p class="text-larger">$9.5 Million in 2020</p>
-		  <div class="row no-gutters">
-      <div class="col-6 financials-legend dot1">Endowment and trust revenue</div>
-      <div class="col-6 financials-legend dot3">Program and other service fees</div>
-      <div class="col-6 financials-legend dot2">Public support</div>
-      <div class="col-6 financials-legend dot4">Retail sales</div></div>
-		  </div>      
-</div>
-	  <hr class="divider" />
-	  
-	  	  <div class="row mt-5"><div class="col-md-8">
-<h3>Expenses</h3>
-      <p class="text-larger">9.5 Million in 2020</p>
-			  <div class="row no-gutters">
-      <div class="col-6 financials-legend dot2">Management and general</div>
-      <div class="col-6 financials-legend dot3">Program services</div>
-      <div class="col-6 financials-legend dot4">Fundraising</div></div>
-			  </div><div class="col-md-4 text-center">
-			  <img src="assets/images/chart-expenses.png" alt="Chart - 2020 Expenses"/>
-		  </div>
-			  
-</div>
-	  
-	  
-	  
-	  
+    <div class="row mb-5">
+      <div class="col-md-4 text-center"> <img src="assets/images/chart-revenue.png" alt="Chart - 2020 Revenue"/> </div>
+      <div class="col-md-8">
+        <h3>Revenue</h3>
+        <p class="text-larger">$9.5 Million in 2020</p>
+        <div class="row">
+          <div class="col-6 financials-legend dot1">Endowment and trust revenue</div>
+          <div class="col-6 financials-legend dot3">Program and other service fees</div>
+          <div class="col-6 financials-legend dot2">Public support</div>
+          <div class="col-6 financials-legend dot4">Retail sales</div>
+        </div>
+      </div>
+    </div>
+    <hr class="divider" />
+    <div class="row mt-5">
+      <div class="col-md-8">
+        <h3>Expenses</h3>
+        <p class="text-larger">9.5 Million in 2020</p>
+        <div class="row">
+          <div class="col-6 financials-legend dot2">Management and general</div>
+          <div class="col-6 financials-legend dot3">Program services</div>
+          <div class="col-6 financials-legend dot4">Fundraising</div>
+        </div>
+      </div>
+      <div class="col-md-4 text-center"> <img src="assets/images/chart-expenses.png" alt="Chart - 2020 Expenses"/> </div>
+    </div>
   </div>
 </section>
 <footer class="bg-dark">
-  <div class="p-5">
-    <div class="row">
-      <div class="col-3 d-flex align-items-center"><img src="assets/images/logo-rev.png" alt="CSC Logo 2-color"/></div>
-      <div class="col-9 d-flex justify-content-end align-items-center">
-        <div class="text-rev">Find Out How to Donate</div>
+  <div class="p-4 p-md-5">
+    <div class="row align-items-center">
+      <div class="col-md-3 text-center mb-4"><img src="assets/images/logo-rev.png" alt="CSC Logo 2-color"/></div>
+      <div class="col-md-9 text-center text-md-right">
+        <div><a href="#" class="text-rev arrow-right">Find Out How to Donate</a></div>
       </div>
     </div>
   </div>
-</footer>
+</footer><div class="breakflag"></div>
 </body>
 </html>
