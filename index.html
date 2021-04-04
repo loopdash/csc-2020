@@ -12,8 +12,8 @@
 <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="assets/js/scripts.js"></script>
 </head>
-<body><a href="#" class="mobile-toggle d-block d-lg-none"></a>
-	<div id="mobile_nav" class="mobile-nav-container"></div>
+<body><a href="#" class="mobile-toggle d-block d-lg-none" aria-expanded="false"></a>
+	<div id="mobile_nav" class="mobile-nav-container" aria-hidden="true"></div>
 <section id="header" class="bg-pattern-dark bg-position-bottom">
   <header class="main-header">
     <div class="p-4 p-md-5">
@@ -71,7 +71,7 @@
     <div class="row">
       <div class="col-md-3"><img src="assets/images/logo-2c.png" alt="CSC Logo 2-color"/></div>
       <div class="col-md-9 d-flex justify-content-end">
-		  <nav>
+		  <nav class="secondary-nav-container">
             <ul class="secondary-nav">
               <li><a href="#about">About CSC</a></li>
               <li><a href="#message">Message From Leadership</a></li>
