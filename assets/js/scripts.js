@@ -9,15 +9,11 @@
      function toggle_menu( e ){
          e.preventDefault();
          if ( $( '.mobile-toggle' ).hasClass( 'open' ) ){
-            $( '.mobile-nav-container' ).removeClass( 'open' );
-            $( '.mobile-toggle' ).removeClass( 'open' );
-            $( '.mobile-nav-container' ).attr( 'aria-hidden', true )
-            $( '.mobile-nav-container' ).attr( 'aria-expanded', false )
+            $( '.mobile-nav-container' ).removeClass( 'open' ).attr( 'aria-hidden', true );
+            $( '.mobile-toggle' ).removeClass( 'open' ).attr( 'aria-expanded', false );
         } else {
-            $( '.mobile-nav-container' ).addClass( 'open' );
-            $( '.mobile-toggle' ).addClass( 'open' );
-            $( '.mobile-nav-container' ).attr( 'aria-hidden', false )
-            $( '.mobile-nav-container' ).attr( 'aria-expanded', true )
+            $( '.mobile-nav-container' ).addClass( 'open' ).attr( 'aria-hidden', false );
+            $( '.mobile-toggle' ).addClass( 'open' ).attr( 'aria-expanded', true );
         }
      }
      function resize(){
@@ -49,7 +45,7 @@
         } );      
        $( '.mobile-nav-container,.mobile-toggle' ).removeClass( 'open' );
        $( '.mobile-nav-container' ).attr( 'aria-hidden', true )
-       $( '.mobile-nav-container' ).attr( 'aria-expanded', false )
+       $( '.mobile-toggle' ).attr( 'aria-expanded', false )
     }
     var w = $( window );
     $( document ).ready( init );
