@@ -1,5 +1,13 @@
 @charset "UTF-8";
-/* CSS Document */
+/*
+navy: 013d59
+reflex: 015a84 - shadow 40% 96b9c9
+text-dark: 0f1a26
+carolina: 61a3ca - shadow 30% cadeea
+cobalt: 018fc4 - shadow 50% 7bc2dc
+green: 529f42 - shadow 33% c0d9bb
+
+*/
 
 body {
 	font-family: Poppins, sans-serif;
@@ -39,20 +47,54 @@ section {
 	/*min-height: 100vh;*/
 }
 header {
-	z-index: 100;
+	z-index: 50;
 }
-header::before {
+.progress-bar {
 	content: '';
 	width: 45vw;
 	height: .8rem;
 	background-color: #015a84;
 	display: block;
+    position: fixed;
+    z-index: 2000;
+    top:0;
+    left:0;
 }
 .sticky-header {
 	top: 0;
-	
-	position: sticky;
-	position: -webkit-sticky;
+	width: 100vw;
+	position: fixed;
+}
+.main-header {
+    background-color: transparent;
+    color: #fff;
+}
+.main-header strong {
+    color: #fff;
+}
+.main-header.scrolled a {
+    color: #fff;
+}
+.main-header.scrolled {
+    background-color: #fff;
+    color: #0f1a26;
+}
+.main-header.scrolled strong {
+    color: #0f1a26;
+}
+.main-header.scrolled a {
+    color: #0f1a26;
+}
+.scrolled .primary-nav a {
+    border-left-color: #0f1a26;
+}
+.csc-logo {
+    background-image: url( ../images/logo-rev.png );
+    background-repeat: no-repeat;
+    min-height: 48px;
+}
+.scrolled .csc-logo {
+    background-image: url( ../images/logo-2c.png );
 }
 nav a {
 	white-space: nowrap;
@@ -156,6 +198,9 @@ nav ul {
 }
 .mobile-nav a:hover {
 	background-color: #eee;
+}
+#header {
+    padding-top: 160px;
 }
 .main-header {
 	color: #fff;
@@ -339,15 +384,6 @@ h4.underline {
 	background-color: #529f42; /*green*/
 	border: 3px solid #c0d9bb;
 }
-/*
-navy: 013d59
-reflex: 015a84 - shadow 40% 96b9c9
-text-dark: 0f1a26
-carolina: 61a3ca - shadow 30% cadeea
-cobalt: 018fc4 - shadow 50% 7bc2dc
-green: 529f42 - shadow 33% c0d9bb
-
-*/
 .columns-md-3 p, .columns-md-2 p, .columns-lg-3 p {
 -webkit-column-break-inside: avoid;
           page-break-inside: avoid;

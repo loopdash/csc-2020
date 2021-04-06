@@ -1,11 +1,34 @@
  (function($){
     //"use strict";
      function init(){
-        $( 'nav a, a.scroll-to, .scroll-to a, .tosection, a[href="#top"], button.scroll-to' ).on( 'click', scrollTo );
-        w.on( 'resize', resize );
-        resize();
-        $( '.mobile-toggle' ).on( 'click', toggle_menu );
+         $( 'nav a, a.scroll-to, .scroll-to a, .tosection, a[href="#top"], button.scroll-to' ).on( 'click', scrollTo );
+         w.on( 'resize', resize );
+         resize();
+         $( '.mobile-toggle' ).on( 'click', toggle_menu );
+
+         $( 'section' ).waypoint({
+             handler: handle_waypoint,
+             offset: 160,
+         });
+
      }
+     
+     function handle_waypoint(direction) {
+         
+         var ndx = 'down' === direction ? 5 : 6,
+             pct = ( $( this.element ).index() - ndx ) / $( 'section' ).length * 100;
+         $( '.progress-bar' ).css( { width: pct + 'vw' } );
+         if ( 'about' === this.element.id ) {
+             if ( 'down' === direction ){
+                 $( '.main-header' ).addClass( 'scrolled' );
+             } else {
+                 $( '.main-header' ).removeClass( 'scrolled' );
+             }
+             
+         }
+         console.log(this.element.id + ' hit', direction, $( this.element ).index(), $( 'section' ).length, pct )
+     }
+     
      function toggle_menu( e ){
          e.preventDefault();
          if ( $( '.mobile-toggle' ).hasClass( 'open' ) ){
