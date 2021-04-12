@@ -209,6 +209,11 @@ nav ul {
 .mobile-nav a:hover {
 	background-color: #eee;
 }
+.logo-link {
+    padding-left:1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+}
 #header {
     padding-top: 100px;
 }
