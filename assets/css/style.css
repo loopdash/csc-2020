@@ -72,17 +72,17 @@ header {
 .main-header strong {
     color: #fff;
 }
-.main-header.scrolled a {
+.scrolled .main-header a {
     color: #fff;
 }
-.main-header.scrolled {
+.scrolled .main-header {
     background-color: #fff;
     color: #0f1a26;
 }
-.main-header.scrolled strong {
+.scrolled .main-header strong {
     color: #0f1a26;
 }
-.main-header.scrolled a {
+.scrolled .main-header a {
     color: #0f1a26;
 }
 .scrolled .primary-nav a {
@@ -116,7 +116,6 @@ nav ul {
 	.primary-nav a {
 		padding-left: 1rem;
 		margin-left: 1rem;
-		border-left: 1px solid #fff;
         font-weight: 400;
         text-decoration: none;
 	}
@@ -143,64 +142,80 @@ nav ul {
 .mobile-toggle {
 	display: block;
 	position: fixed;
-	top: .5rem;
-	right: .5rem;
+	top: 1.5rem;
+	right: 1rem;
 	height: 40px;
 	width: 40px;
 	z-index:1000;
 	font-size: 2rem;
 	text-decoration: none;
-	color: #aaa;
+	color: #fff;
 }
-.mobile-toggle:hover {
-	text-decoration: none;
-	color: #999;
+
+.mobile-icon-line {
+   background-color:  #fff;
+    height: 2px;
+    width: 40px;
+    position: absolute;
+    display: block;
+    transition: all .3s;
 }
-.mobile-toggle::before {
-  font-family: 'csc' !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  content: "\e9bd";	
+.scrolled .mobile-icon-line {
+   background-color:  #015a84;
 }
-.mobile-toggle.open::before {
-  content: "\ea0f";	
+.mobile-icon-line.mobile-icon-top {
+    top:10px;
+}
+.mobile-icon-line.mobile-icon-bottom {
+    top:30px;
+}
+
+.mobile-toggle.open .mobile-icon-line.mobile-icon-top {
+    transform: rotate( 45deg );
+        top:20px;
+}
+.mobile-toggle.open .mobile-icon-line.mobile-icon-bottom {
+    transform: rotate( -45deg );
+    top: 20px;
 }
 .mobile-nav-container {
 	display: block;
 	position: fixed;
-	top:auto;
-	bottom: 100%;
-	right: 0;
+	top:90px;
+	right: 100%;
 	transition: all .3s;
 	width: 100%;
 	height: 100%;
 	z-index:100;
 }
 .mobile-nav-container.open {
-	bottom: 0;
+	right: 0;
 }
 .mobile-nav.primary-nav {
 	max-width: none;
 	padding: 1rem 0;
-	background-color: #ddd;
+	background-color: #fff;
+    height:100%;
 }
 .mobile-nav a {
 	display: block;
 	padding: 1rem 2rem;
 	text-decoration: none;
-	background-color: #ddd;
+	background-color: #fff;
 	color: #013d59;
-    font-weight: 400;
+    font-weight: 700;
+    font-size: 1.25rem;
 }
 .mobile-nav a:hover {
 	background-color: #eee;
 }
 #header {
-    padding-top: 160px;
+    padding-top: 100px;
+}
+@media (min-width: 1200px){
+    #header {
+        padding-top: 160px;
+    }
 }
 .main-header {
 	color: #fff;
@@ -245,7 +260,7 @@ nav ul {
 .leading-quote::before {
 	content:'';
 	float: left;
-	background-image: url("../images/icon-quote.png");
+	background-image: url("../images/icon-quote-rev.png");
 	display: block;
 	height: 48px;
 	width: 54px;
@@ -368,21 +383,29 @@ h4.underline {
 	border-radius: 50%;
 	vertical-align: middle;
 }
-.financials-legend.dot1::before {
-	background-color: #61a3ca; /*carolina*/
+.financials-legend.dot1::before {/*carolina*/
+	background-color: #61a3ca; 
 	border: 3px solid #cadeea;
 }
-.financials-legend.dot2::before {
-	background-color: #015a84; /*reflex*/
+.financials-legend.dot2::before {/*reflex*/
+	background-color: #015a84; 
 	border: 3px solid #96b9c9;
 }
-.financials-legend.dot3::before {
-	background-color: #018fc4; /*cobalt*/
+.financials-legend.dot3::before {/*cobalt*/
+	background-color: #018fc4; 
 	border: 3px solid #7bc2dc;
 }
-.financials-legend.dot4::before {
-	background-color: #529f42; /*green*/
+.financials-legend.dot4::before {/*green*/
+	background-color: #529f42; 
 	border: 3px solid #c0d9bb;
+}
+.financials-legend.dot5::before {/*red*/
+	background-color: #b1113a; 
+	border: 3px solid #d38397;
+}
+.small-bullet li::before {
+    content: '\00B7\0020';
+    margin-left: -0.25em;
 }
 .columns-md-3 p, .columns-md-2 p, .columns-lg-3 p {
 -webkit-column-break-inside: avoid;
@@ -400,5 +423,10 @@ h4.underline {
 @media (min-width: 992px){
 	.columns-lg-3 {
 		columns: 3;
+	}
+}
+@media (min-width: 1200px){
+	.columns-xl-2 {
+		columns: 2;
 	}
 }

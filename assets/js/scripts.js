@@ -20,9 +20,9 @@
          $( '.progress-bar' ).css( { width: pct + 'vw' } );
          if ( 'about' === this.element.id ) {
              if ( 'down' === direction ){
-                 $( '.main-header' ).addClass( 'scrolled' );
+                 $( 'body' ).addClass( 'scrolled' );
              } else {
-                 $( '.main-header' ).removeClass( 'scrolled' );
+                 $( 'body' ).removeClass( 'scrolled' );
              }
              
          }
@@ -60,7 +60,7 @@
         e.preventDefault();
         var el      = $( e.currentTarget ),
             target  = el.attr( 'href' ),
-            adjust  = undefined === el.data( 'adjust' ) ? ( $( '.breakflag' ).is( ':visible' ) ? 160 : 0 ) : parseInt( el.data( 'adjust' ) ),
+            adjust  = undefined === el.data( 'adjust' ) ? ( $( '.breakflag' ).is( ':visible' ) ? 160 : 90 ) : parseInt( el.data( 'adjust' ) ),
             offset  = target && $( target).length ? $(target).offset().top - adjust : 0,
             container = $( 'html, body' );
         container.animate( { scrollTop: offset }, 'slow', function(){
