@@ -334,10 +334,10 @@ hr.divider {
 button-pill.arrow-right:hover::after {
 	background-image: url("../images/arrow-right-rev.png");
 }
-button-pull.arrow-right-rev:hover::after {
+button-pill.arrow-right-rev:hover::after {
 	background-image: url("../images/arrow-right.png");
 }
-button.pill-rev {
+.pill-rev {
 	box-shadow: none;
 	border: 2px solid #fff;
 	border-radius: 1.5rem;
@@ -346,10 +346,14 @@ button.pill-rev {
 	background-color: transparent;
 	color: #fff;
 	text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 2;
 }
-button.pill-rev:hover {
+.pill-rev:hover {
 	background-color: #fff;
 	color: #015a84;
+    text-decoration: none;
 }
 table.financials {
     border-spacing: 4px;
