@@ -49,6 +49,9 @@ section {
 header {
 	z-index: 50;
 }
+.screen-reader-text {
+    text-indent: -999999px;
+}
 .progress-bar {
 	content: '';
 	width: 45vw;
