@@ -51,6 +51,7 @@ header {
 }
 .screen-reader-text {
     text-indent: -999999px;
+    display: block;
 }
 .progress-bar {
 	content: '';
