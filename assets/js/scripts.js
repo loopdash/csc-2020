@@ -5,12 +5,29 @@
          w.on( 'resize', resize );
          resize();
          $( '.mobile-toggle' ).on( 'click', toggle_menu );
-
+         $( '.show-more-toggle' ).on( 'click', toggle_show_more );
          $( 'section' ).waypoint({
              handler: handle_waypoint,
              offset: 160,
          });
 
+     }
+     
+     function toggle_show_more( e ){
+         e.preventDefault();
+         var button = $( e.target ),
+             showMoreContainerId = button.attr( 'href' ),
+             showMoreContainer = $( showMoreContainerId ),
+             showMoreItems = showMoreContainer.find( '.show-more,.show-more-tease' ),
+             showMoreFirst = showMoreItems.first();
+         if ( showMoreFirst.hasClass( 'open' ) ){
+             showMoreItems.removeClass( 'open' ).attr( 'aria-hidden', 'true' );
+             button.text( 'Show More' ).attr( 'aria-expanded', 'false' ).removeClass( 'open' );
+         } else {
+             showMoreItems.addClass( 'open' ).attr( 'aria-hidden', 'false' );
+             button.text( 'Show Less' ).attr( 'aria-expanded', 'true' ).addClass( 'open' );
+         }
+         
      }
      
      function handle_waypoint(direction) {
@@ -25,6 +42,15 @@
                  $( 'body' ).removeClass( 'scrolled' );
              }
              
+         }
+         if ( 'financials' === this.element.id ){
+             if ( 'down' === direction ){
+                $( '.donate-footer' ).removeClass( 'sticky-footer' );
+             } else {
+                $( '.donate-footer' ).addClass( 'sticky-footer' );
+             }
+         } else {
+             $( '.donate-footer' ).addClass( 'sticky-footer' );
          }
          console.log(this.element.id + ' hit', direction, $( this.element ).index(), $( 'section' ).length, pct )
      }

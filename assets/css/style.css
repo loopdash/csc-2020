@@ -364,6 +364,90 @@ button-pill.arrow-right-rev:hover::after {
 	color: #015a84;
     text-decoration: none;
 }
+.pill {
+	box-shadow: none;
+	border: none;
+	border-radius: 1.5rem;
+	height: 3rem;
+	padding:0 4rem;
+	background-color: #015a84;
+	color: #fff;
+	text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 2.25;
+}
+.pill:hover {
+	background-color: #015a84;
+	color: #fff;
+    text-decoration: none;
+}
+.show-more {
+    display: none;
+    opacity: 0;
+    transition: all .3s;
+}
+.show-more-tease {
+    opacity: .3;
+    transition: all .3s;
+}
+.show-more-toggle {
+    transform: translateY(-150px);
+}
+.show-more.open, .show-more-tease.open {
+    display: block;
+    opacity: 1;
+}
+.show-more-toggle.open {
+    transform: translateY(0);
+}
+.donate-footer {
+    background-color: #013d59;
+    padding: 1.5rem;
+    color: #fff;
+}
+.donate-footer.sticky-footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #f3f3f4;
+    width: 100vw;
+    padding: 1.5rem !important;
+    color: #015a84;
+}
+.donate-footer .footer-logo {
+    display: block;
+    text-align: center;
+}
+.donate-footer.sticky-footer .footer-logo {
+    display: none;
+}
+.donate-footer .footer-donate-link {
+    text-align: right;
+}
+.donate-footer .footer-donate-link a {
+    color: #fff;
+}
+.donate-footer.sticky-footer .footer-donate-link {
+    text-align: center;
+    flex-basis: 100%;
+    max-width: 100%;
+}
+.donate-footer.sticky-footer .footer-donate-link a {
+    color: #015a84;
+}
+@media (min-width: 768px){
+    .donate-footer {
+        padding: 3rem;
+    }
+    .donate-footer .footer-logo {
+    flex-basis: 25%;
+    max-width: 25%;
+    }
+    .donate-footer .footer-donate-link {
+    flex-basis: 75%;
+    max-width: 75%;
+    }
+}
 table.financials {
     border-spacing: 4px;
     border-collapse: separate;
