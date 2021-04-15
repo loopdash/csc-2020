@@ -437,7 +437,7 @@ button-pill.arrow-right-rev:hover::after {
 }
 @media (min-width: 768px){
     .donate-footer {
-        padding: 3rem;
+        padding: 1.5rem 3rem;
     }
     .donate-footer .footer-logo {
     flex-basis: 25%;
