@@ -38,6 +38,16 @@ a {
 a:hover {
     color: #018fc4;
 }
+
+::-moz-selection {
+    background-color: #015a84;
+    color: #ffffff;
+}
+::selection {
+    background-color: #015a84;
+    color: #ffffff;
+}
+
 @media (min-width: 1425px){
 	.bg-pattern-dark, .bg-pattern-light {
 		background-size: 100%;
