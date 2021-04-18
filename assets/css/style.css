@@ -414,6 +414,9 @@ button-pill.arrow-right-rev:hover::after {
     padding: 1.5rem !important;
     color: #015a84;
 }
+.donate-footer.sticky-footer.dismissed {
+    display:none;
+}
 .donate-footer .footer-logo {
     display: block;
     text-align: center;
@@ -435,6 +438,14 @@ button-pill.arrow-right-rev:hover::after {
 .donate-footer.sticky-footer .footer-donate-link a {
     color: #015a84;
 }
+.donate-footer .dismiss-footer {
+    position:absolute;
+    right: 1.5rem;
+    top: .75rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
 @media (min-width: 768px){
     .donate-footer {
         padding: 1.5rem 3rem;

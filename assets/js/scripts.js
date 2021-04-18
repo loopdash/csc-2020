@@ -5,6 +5,7 @@
          w.on( 'resize', resize );
          resize();
          $( '.mobile-toggle' ).on( 'click', toggle_menu );
+         $( '.dismiss-footer' ).on( 'click', dismiss_footer );
          $( '.show-more-toggle' ).on( 'click', toggle_show_more );
          $( 'section' ).waypoint({
              handler: handle_waypoint,
@@ -12,7 +13,10 @@
          });
 
      }
-     
+     function dismiss_footer( e ){
+         e.preventDefault();
+         $( '.donate-footer' ).addClass( 'dismissed' );
+     }
      function toggle_show_more( e ){
          e.preventDefault();
          var button = $( e.target ),
