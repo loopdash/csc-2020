@@ -408,6 +408,9 @@ button-pill.arrow-right-rev:hover::after {
     display: block;
     opacity: 1;
 }
+.show-more.row.open, .show-more-tease.row.open {
+    display: flex;
+}
 .show-more-toggle.open {
     transform: translateY(0);
 }
