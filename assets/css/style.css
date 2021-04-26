@@ -518,8 +518,8 @@ h4.underline {
 	border: 3px solid #96b9c9;
 }
 .financials-legend.dot3::before {/*cobalt*/
-	background-color: #018fc4; 
-	border: 3px solid #7bc2dc;
+	background-color: #afb0b0; 
+	border: 3px solid #d3d3d3;
 }
 .financials-legend.dot4::before {/*green*/
 	background-color: #529f42; 
